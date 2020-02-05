@@ -1,0 +1,15 @@
+user_homepage:
+    path:     /
+    defaults: { _controller: UserBundle:Default:index }
+user_admin:
+    path:     /access/admin
+    defaults: { _controller: UserBundle:Default:admin }
+user_parent:
+    path:     /access/parent
+    defaults: { _controller: UserBundle:Default:parent }
+user_eleve:
+    path:     /access/eleve
+    defaults: { _controller: UserBundle:Default:eleve }
+user_enseignant:
+    path:     /access/enseignant
+    defaults: { _controller: UserBundle:Default:enseignant }

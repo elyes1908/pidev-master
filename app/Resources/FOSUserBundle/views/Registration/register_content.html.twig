@@ -1,0 +1,34 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<form  id="signup-form" class="signup-form" action="{{ path('fos_user_registration_register') }}"  method="POST">
+</div>
+<div class="form-group">
+    {{ form_widget(form.email, { 'attr': {'class': 'form-input', 'placeholder': 'Email','type':'text','name':'name','id':'name' } }) }}
+
+</div>
+<div class="form-group">
+    {{ form_widget(form.nom, { 'attr': {'class': 'form-input', 'placeholder': 'Name','type':'text','name':'name','id':'name' } }) }}
+
+</div>
+<div class="form-group">
+    {{ form_widget(form.username, { 'attr': {'class': 'form-input', 'placeholder': 'UserName','type':'text','name':'name','id':'name' } }) }}
+
+</div>
+<div class="form-group">
+    {{ form_widget(form.plainPassword.first, { 'attr': {'class': 'form-input', 'placeholder': 'Password','type':'text','name':'name','id':'name' } }) }}
+
+</div>
+<div class="form-group">
+    {{ form_widget(form.plainPassword.second, { 'attr': {'class': 'form-input', 'placeholder': ' Password 2','type':'text','name':'name','id':'name' } }) }}
+
+</div>
+    <div class="form-group">
+        {{ form_widget(form.roles, { 'attr': {'class': 'form-input','type':'text','name':'name','id':'name' } }) }}
+
+    </div>
+{{ form_rest(form) }}
+
+<div class="form-group">
+    <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+</div>
+
+</form>
